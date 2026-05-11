@@ -1,0 +1,53 @@
+body {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+}
+h1 {
+    padding: 20px;
+    color: white;
+    font-size: 3rem;
+    letter-spacing: 3px;
+    text-shadow: 0 0 15px gold;
+}
+.house-btn {
+    border: none;
+    background: transparent;
+    transition: transform 0.3s ease,
+                filter 0.3s ease;
+}
+.house-btn img {
+    width: 400px;
+    height: auto;
+     border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,.5);
+
+    transition: inherit;
+}
+.gryffindor:hover img {
+    filter: drop-shadow(0 0 18px crimson);
+}
+
+.hufflepuff:hover img {
+    filter: drop-shadow(0 0 18px gold);
+}
+
+.ravenclaw:hover img {
+    filter: drop-shadow(0 0 18px dodgerblue);
+}
+
+.slytherin:hover img {
+    filter: drop-shadow(0 0 18px limegreen);
+}
+
+@media (max-width: 768px) {
+    .house-btn img {
+        width: 130px;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+}
