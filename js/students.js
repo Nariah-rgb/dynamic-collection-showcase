@@ -4,7 +4,7 @@ const students = [
         lastName: "Potter",
         age: "17",
         year: "7",
-        photo: "",
+        photo: "imgs/",
         hiddenDetail: "Harry can speak Parseltongue",
 },
 {

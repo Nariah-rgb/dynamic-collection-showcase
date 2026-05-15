@@ -4,13 +4,20 @@ body {
     flex-direction: column;
     justify-content: center;
     min-height: 100vh;
+    background-image: url("hogwarts.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 h1 {
     padding: 20px;
-    color: white;
-    font-size: 3rem;
+    color: black;
+    font-size: 4rem;
     letter-spacing: 3px;
-    text-shadow: 0 0 15px gold;
+    text-shadow: 0 0 15px rgb(146, 146, 146);
+    font-family: "masonic-lodge", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 .house-btn {
     border: none;
@@ -21,11 +28,8 @@ h1 {
 .house-btn img {
     width: 400px;
     height: auto;
-     border-radius: 15px;
-    box-shadow: 0 8px 20px rgba(0,0,0,.5);
-
-    transition: inherit;
 }
+
 .gryffindor:hover img {
     filter: drop-shadow(0 0 18px crimson);
 }
