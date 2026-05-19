@@ -4,7 +4,7 @@ const students = [
         lastName: "Potter",
         age: "17",
         year: "7",
-        photo: "imgs/harrypotter.jpg",
+        photo: "harrypotter.jpg",
         hiddenDetail: "Harry can speak Parseltongue",
 },
 {
@@ -12,7 +12,7 @@ const students = [
         lastName: "Granger",
         age: "17",
         year: "7",
-        photo: "imgs/hermione.jpg",
+        photo: "hermione.jpg",
         hiddenDetail: "Hermione memorized any Hogwarts test",
 },
 {
@@ -20,7 +20,7 @@ const students = [
         lastName: "Weasley",
         age: "17",
         year: "7",
-        photo: "imgs/ron.jpg",
+        photo: "ron.jpg",
         hiddenDetail: "Ron is terrified of spiders",
 },
 {
@@ -28,7 +28,7 @@ const students = [
         lastName: "Longbottom",
         age: "17",
         year: "7",
-        photo: "imgs/neville.jpeg",
+        photo: "neville.jpeg",
         hiddenDetail: "Neville eventually became a Hogwarts professor",
 },
 {
@@ -36,7 +36,7 @@ const students = [
         lastName: "Weasley",
         age: "16",
         year: "6",
-        photo: "imgs/ginny.jpg",
+        photo: "ginny.jpg",
         hiddenDetail: "She married Harry Potter and had three children; James Sirius, Albus Severus, & Lily Luna",
 },
 {
@@ -44,7 +44,7 @@ const students = [
         lastName: "Weasley",
         age: "20",
         year: "N/A",
-        photo: "imgs/fred.png",
+        photo: "fred.png",
         hiddenDetail: "Fred is the older brother",
 },
 {
@@ -52,7 +52,7 @@ const students = [
         lastName: "Weasley",
         age: "20",
         year: "N/A",
-        photo: "imgs/george.png",
+        photo: "george.png",
         hiddenDetail: "During the Battle of the Seven Potters, George lost his left ear after being struck by Severus Snape's",
 },
 {
@@ -60,7 +60,7 @@ const students = [
         lastName: "Thomas",
         age: "17",
         year: "7",
-        photo: "imgs/dean.jpg",
+        photo: "dean.jpg",
         hiddenDetail: "Dated Ginny Weasley for a period, though the relationship ended due to the stress of her rising confidence and an awkward encounter involving an invisible Harry Potter.",
 },
 {
@@ -68,7 +68,7 @@ const students = [
         lastName: "Finnigan",
         age: "17",
         year: "7",
-        photo: "imgs/seamus.jpg",
+        photo: "seamus.jpg",
         hiddenDetail: "Infamous for his accidental explosions. From setting his feather on fire in Charms class to repeatedly blowing up his cauldrons",
 },
 
