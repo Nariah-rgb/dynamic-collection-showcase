@@ -62,6 +62,9 @@ body {
     font-weight: bold;
 }
 #rosterGrid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     row-gap: 2rem;
 }
 #searchInput,
@@ -101,4 +104,105 @@ body {
         calc(100% - 14px) calc(50% - 3px);
     background-size: 6px 6px;
     background-repeat: no-repeat;
+}
+.funFactInfo {
+    font-family: "Cinzel", serif;
+}
+p {
+    font-family: "Cinzel", serif;
+}
+.modal-content {
+    background-color: #2b0f0f;
+    color: #f5deb3;
+    border: 3px solid #d4af37;
+    border-radius: 18px;
+    overflow: hidden;
+}
+
+.modal-header {
+    background: linear-gradient(to right, #740001, #ae0001);
+    color: gold;
+    border-bottom: 2px solid #d4af37;
+}
+
+.modal-footer {
+    background-color: #1a0000;
+    border-top: 2px solid #d4af37;
+}
+.modal-title,
+.modal-body h4 {
+    font-family: 'Cinzel', serif;
+    letter-spacing: 1px;
+}
+.modal-body img {
+    border: 4px solid gold;
+    border-radius: 30px;
+    box-shadow: 0 0 25px rgba(255, 215, 0, 0.4);
+    transition: transform 0.3s ease;
+}
+
+.modal-body img:hover {
+    transform: scale(1.03);
+}
+.modal-content {
+    animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+    }
+    to {
+        box-shadow: 0 0 25px rgba(255, 215, 0, 0.7);
+    }
+}
+.alert-info {
+    background-color: rgba(255, 215, 0, 0.1);
+    border: 1px solid gold;
+    color: #fff8dc;
+    border-radius: 12px;
+}
+.modal-backdrop.show {
+    opacity: 0.85;
+    backdrop-filter: blur(4px);
+}
+.fun-fact-btn {
+    background: linear-gradient(to right, #740001, #ae0001);
+    border: 2px solid gold;
+    color: gold;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.fun-fact-btn:hover {
+    background: gold;
+    color: #740001;
+    transform: translateY(-2px);
+}
+.modal.fade .modal-dialog {
+    transform: translateY(-30px) scale(0.95);
+    transition: all 0.3s ease;
+}
+
+.modal.show .modal-dialog {
+    transform: translateY(0) scale(1);
+}
+.back-home-btn {
+    background: linear-gradient(to right, #740001, #ae0001);
+    border: 2px solid gold;
+    color: gold;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    border-radius: 30px;
+    padding: 10px 20px;
+    margin-top: 20px;
+}
+.searchInput {
+    margin: 50px;
+}
+h1 {
+    font-family: "cinzel", serif;
+    font-size: 100px;
+    color: #ffd700;
+    margin-bottom: 12px;
 }
