@@ -1,3 +1,12 @@
+const params = new URLSearchParams(window.location.search);
+const house = params.get("house");
+document.body.classList.add(house);
+
+const students = houses[house] || [];
+
+document.querySelector("h1").textContent =
+  house ? house.charAt(0).toUpperCase() + house.slice(1) : "House Not Found";
+  
 document.addEventListener("DOMContentLoaded", () => {
     const grid = document.getElementById("rosterGrid");
     const sortSelect = document.getElementById("sortSelect");
@@ -86,7 +95,7 @@ const showStudentModal = (selectedStudent) => {
                 <div class="modal-dialog modal-lg">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="studentModalLabel">Player Details</h5>
+                            <h5 class="modal-title" id="studentModalLabel">Student Details</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body" id="studentModalBody">
@@ -103,7 +112,8 @@ const showStudentModal = (selectedStudent) => {
 
     const studentModalLabel = document.getElementById('studentModalLabel');
     const studentModalBody = document.getElementById('studentModalBody');
-    studentModalLabel.textContent = `Gryffindor`;
+studentModalLabel.textContent =
+  house.charAt(0).toUpperCase() + house.slice(1);
 
     studentModalBody.innerHTML = `
             <div class="text-center">
