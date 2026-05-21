@@ -5,11 +5,28 @@ body {
     justify-content: center;
 }
 body.gryffindor {
-    background: linear-gradient(135deg, #7f0909 0%, #d59f12 100%);
+    background: linear-gradient(180deg, rgba(127, 9, 9, 0.78), rgba(213, 159, 18, 0.55)),
+        url("imgs/gryff.jpg") center/cover no-repeat fixed;
+    background-blend-mode: overlay;
     color: #fbe8a6;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+}
+body.hufflepuff {
+    background: linear-gradient(180deg, rgba(159, 121, 0, 0.78), rgba(255, 235, 157, 0.55)),
+        url("imgs/huff.jpeg") center/cover no-repeat fixed;
+    background-blend-mode: overlay;
+    color: #3f2b08;
+}
+body.ravenclaw {
+    background: linear-gradient(180deg, rgba(2, 37, 92, 0.78), rgba(110, 163, 221, 0.45)),
+        url("imgs/rave.jpg") center/cover no-repeat fixed;
+    background-blend-mode: overlay;
+    color: #eef4ff;
+}
+body.slytherin {
+    background: linear-gradient(180deg, rgba(0, 68, 34, 0.78), rgba(121, 188, 131, 0.45)),
+        url("imgs/sly.jpeg") center/cover no-repeat fixed;
+    background-blend-mode: overlay;
+    color: #e6f5e5;
 }
 .card {
     border: none;
@@ -62,6 +79,18 @@ body.gryffindor {
     font-size: 2rem;
     color: rgba(255,215,0,0.2);
     font-weight: bold;
+}
+
+body.hufflepuff .card::before {
+    content: "H";
+}
+
+body.ravenclaw .card::before {
+    content: "R";
+}
+
+body.slytherin .card::before {
+    content: "S";
 }
 #rosterGrid {
     display: flex;
@@ -150,6 +179,74 @@ p {
     animation: glow 2s infinite alternate;
 }
 
+body.gryffindor .modal-content {
+    background-color: #2b0f0f;
+    border-color: #d4af37;
+    color: #f5deb3;
+}
+
+body.gryffindor .modal-header {
+    background: linear-gradient(to right, #740001, #ae0001);
+    color: gold;
+    border-bottom: 2px solid #d4af37;
+}
+
+body.gryffindor .modal-footer {
+    background-color: #1a0000;
+    border-top: 2px solid #d4af37;
+}
+
+body.hufflepuff .modal-content {
+    background-color: #4b3715;
+    border-color: #f0c419;
+    color: #000000;
+}
+
+body.hufflepuff .modal-header {
+    background: linear-gradient(to right, #f0c419, #c89c2b);
+    color: #372e29;
+    border-bottom: 2px solid #372e29;
+}
+
+body.hufflepuff .modal-footer {
+    background-color: #3a2d17;
+    border-top: 2px solid #d2a640;
+}
+
+body.ravenclaw .modal-content {
+    background-color: #091531;
+    border-color: #4f6fa4;
+    color: #d9c18f;
+}
+
+body.ravenclaw .modal-header {
+    background: linear-gradient(to right, #27408b, #5c78b4);
+    color: #d9c18f;
+    border-bottom: 2px solid #4f6fa4;
+}
+
+body.ravenclaw .modal-footer {
+    background-color: #0b203f;
+    border-top: 2px solid #4f6fa4;
+}
+
+body.slytherin .modal-content {
+    background-color: #102f1f;
+    border-color: #a4c639;
+    color: #dfe9d3;
+}
+
+body.slytherin .modal-header {
+    background: linear-gradient(to right, #285e38, #517652);
+    color: #eaf3dc;
+    border-bottom: 2px solid #a4c639;
+}
+
+body.slytherin .modal-footer {
+    background-color: #122a1a;
+    border-top: 2px solid #a4c639;
+}
+
 @keyframes glow {
     from {
         box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
@@ -211,17 +308,14 @@ h1 {
 /* test */
 
 body.hufflepuff {
-    background: linear-gradient(135deg, #ecb939 0%, #6d533d 100%);
     color: #372e29;
 }
 
 body.ravenclaw {
-    background: linear-gradient(135deg, #0b1f44 0%, #5c78b4 100%);
     color: #cbb98b;
 }
 
 body.slytherin {
-    background: linear-gradient(135deg, #1a472a 0%, #6a8a5b 100%);
     color: #c9d6b8;
 }
 
@@ -249,8 +343,61 @@ body.slytherin .card {
   color: #dfe9d3;
 }
 
+body.gryffindor #searchInput,
+body.gryffindor #sortSelect {
+  background: #3b1111;
+  color: #fbe8a6;
+  border-color: #d4af37;
+}
+
+body.gryffindor .fun-fact-btn,
+body.gryffindor .back-home-btn {
+  background: linear-gradient(to right, #740001, #ae0001);
+  border-color: gold;
+  color: gold;
+}
+
 body.hufflepuff #searchInput,
-body.hufflepuff #sortSelect { background: #fff4c6; color: #372e29; }
+body.hufflepuff #sortSelect {
+  background: #fff4c6;
+  color: #372e29;
+  border-color: #f0c419;
+}
+
+body.hufflepuff .fun-fact-btn,
+body.hufflepuff .back-home-btn {
+  background: linear-gradient(to right, #f0c419, #c89c2b);
+  border-color: #372e29;
+  color: #372e29;
+}
+
+body.ravenclaw #searchInput,
+body.ravenclaw #sortSelect {
+  background: #1d305d;
+  color: #d9c18f;
+  border-color: #8a92c5;
+}
+
+body.ravenclaw .fun-fact-btn,
+body.ravenclaw .back-home-btn {
+  background: linear-gradient(to right, #27408b, #6a88c2);
+  border-color: #946b2d;
+  color: #d9c18f;
+}
+
+body.slytherin #searchInput,
+body.slytherin #sortSelect {
+  background: #113a25;
+  color: #dfe9d3;
+  border-color: #a4c639;
+}
+
+body.slytherin .fun-fact-btn,
+body.slytherin .back-home-btn {
+  background: linear-gradient(to right, #285e38, #6d8b5b);
+  border-color: #a4c639;
+  color: #eaf3dc;
+}
 
 body.ravenclaw .modal-content { background: #091531; border-color: #4f6fa4; }
 
