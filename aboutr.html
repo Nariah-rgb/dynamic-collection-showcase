@@ -2,14 +2,11 @@
 <html lang="en" data-bs-theme="light">
 
 <head>
-    <title>About Gryffindor</title>
+    <title>About Ravenclaw</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Merriweather&display=swap"
         rel="stylesheet">
 
@@ -20,54 +17,52 @@
             align-items: center;
             justify-content: center;
             background:
-                linear-gradient(rgba(35, 0, 0, 0.78), rgba(35, 0, 0, 0.78)),
+                linear-gradient(rgba(2, 15, 35, 0.75), rgba(2, 15, 35, 0.75)),
                 url("imgs/parchment.jpg") no-repeat center center fixed;
             background-size: cover;
             font-family: "Merriweather", serif;
-            color: #f8e7b0;
+            color: #e8dcc0;
             padding: 20px;
         }
 
         .about-card {
-            background: rgba(55, 0, 0, 0.9);
-            border: 4px solid gold;
+            background: rgba(7, 24, 54, 0.9);
+            border: 3px solid #b08d57;
             border-radius: 24px;
             padding: 45px;
             max-width: 850px;
             text-align: center;
-            box-shadow: 0 0 35px rgba(255, 215, 0, 0.45);
+            box-shadow: 0 0 35px rgba(176, 141, 87, 0.5);
         }
 
         h1 {
             font-family: "Cinzel", serif;
             font-size: 4rem;
-            color: gold;
-            text-shadow: 0 0 12px rgba(255, 215, 0, 0.8);
+            color: #6fa8dc;
+            text-shadow: 0 0 12px rgba(111, 168, 220, 0.7);
             margin-bottom: 25px;
-            letter-spacing: 2px;
         }
 
         p {
             line-height: 1.9;
             font-size: 1.1rem;
-            color: #f5deb3;
+            color: #f0e6d2;
         }
 
-        .btn-gryff {
+        .btn-raven {
             margin-top: 25px;
-            background: linear-gradient(to right, #740001, #ae0001);
-            border: 2px solid gold;
-            color: gold;
+            background: linear-gradient(to right, #0f4d92, #3f78b5);
+            border: 2px solid #b08d57;
+            color: #fff;
             padding: 14px 28px;
             border-radius: 40px;
             font-weight: bold;
-            letter-spacing: 1px;
             transition: 0.3s;
         }
 
-        .btn-gryff:hover {
-            background: gold;
-            color: #740001;
+        .btn-raven:hover {
+            background: #b08d57;
+            color: #0f2d52;
             transform: scale(1.05);
         }
     </style>
@@ -76,25 +71,25 @@
 <body>
 
     <div class="about-card">
-        <h1>Gryffindor</h1>
+        <h1>Ravenclaw</h1>
 
         <p>
-            Gryffindor is one of the four houses of Hogwarts School of Witchcraft and Wizardry,
-            founded by Godric Gryffindor. It values courage, bravery, nerve, and chivalry.
+            Ravenclaw values intelligence, wisdom, creativity, and learning.
+            Members are known for curiosity and their love of knowledge.
         </p>
 
         <p>
-            The house colors are scarlet and gold, and its emblematic animal is the lion —
-            a symbol of strength and leadership.
+            The house colors are blue and bronze, and its emblematic animal is the eagle —
+            a symbol of vision and intellect.
         </p>
 
         <p>
-            Gryffindors are natural leaders, willing to take risks to protect others
-            and fight for justice.
+            Ravenclaws are imaginative thinkers who enjoy solving problems
+            and exploring new ideas.
         </p>
 
-        <a href="roster.html?house=gryffindor" class="btn btn-gryff">
-            View Gryffindor Students
+        <a href="roster.html?house=ravenclaw" class="btn btn-raven">
+            View Ravenclaw Students
         </a>
     </div>
 

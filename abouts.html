@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en" data-bs-theme="light">
+
+<head>
+    <title>About Slytherin</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Cormorant+Garamond&display=swap"
+        rel="stylesheet">
+
+    <style>
+        body {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background:
+                linear-gradient(rgba(0, 20, 0, 0.8), rgba(0, 20, 0, 0.8)),
+                url("imgs/parchment.jpg") no-repeat center center fixed;
+            background-size: cover;
+            font-family: "Cormorant Garamond", serif;
+            color: #d9e8d9;
+            padding: 20px;
+        }
+
+        .about-card {
+            background: rgba(6, 30, 16, 0.92);
+            border: 3px solid #c0c0c0;
+            border-radius: 24px;
+            padding: 45px;
+            max-width: 850px;
+            text-align: center;
+            box-shadow: 0 0 35px rgba(192, 192, 192, 0.4);
+        }
+
+        h1 {
+            font-family: "Cinzel", serif;
+            font-size: 4rem;
+            color: #6bbf73;
+            text-shadow: 0 0 14px rgba(107, 191, 115, 0.8);
+            margin-bottom: 25px;
+        }
+
+        p {
+            line-height: 1.9;
+            font-size: 1.2rem;
+            color: #e6f2e6;
+        }
+
+        .btn-slyth {
+            margin-top: 25px;
+            background: linear-gradient(to right, #0f4d12, #2d7a36);
+            border: 2px solid #c0c0c0;
+            color: white;
+            padding: 14px 28px;
+            border-radius: 40px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn-slyth:hover {
+            background: #c0c0c0;
+            color: #0f4d12;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="about-card">
+        <h1>Slytherin</h1>
+
+        <p>
+            Slytherin values ambition, cunning, leadership, and resourcefulness.
+            Members are known for their determination to achieve greatness.
+        </p>
+
+        <p>
+            The house colors are green and silver, and its emblematic animal is the serpent —
+            a symbol of power and ambition.
+        </p>
+
+        <p>
+            Slytherins are strategic and confident, often excelling through
+            their ambition and strong sense of purpose.
+        </p>
+
+        <a href="roster.html?house=slytherin" class="btn btn-slyth">
+            View Slytherin Students
+        </a>
+    </div>
+
+</body>
+
+</html>

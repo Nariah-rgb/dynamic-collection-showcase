@@ -150,7 +150,7 @@ hufflepuff: [
         lastName: "Sprout",
         age: "60",
         year: "mentor",
-        photo: "imgs/pomona.jpeg",
+        photo: "imgs/sprout.jpg",
         hiddenDetail: "Pomona was known for her expertise in Herbology and her love for teaching",
 },
 {
@@ -216,7 +216,7 @@ hufflepuff: [
         lastName: "Chang",
         age: "18",
         year: "N/A",
-        photo: "imgs/cho.jpg",
+        photo: "imgs/chang.jpg",
         hiddenDetail: "Cho was known for her beauty and skill in Herbology",
 },
 {
@@ -248,7 +248,7 @@ hufflepuff: [
         lastName: "Patil",
         age: "17",
         year: "7",
-        photo: "imgs/padma.jpg",
+        photo: "imgs/patil.jpg",
         hiddenDetail: "Padma was known for her dedication to her studies and her commitment to her house",
 },
 {
@@ -290,7 +290,7 @@ hufflepuff: [
         lastName: "Snape",
         age: "37",
         year: "Mentor",
-        photo: "imgs/severus.jpg",
+        photo: "imgs/snape.jpeg",
         hiddenDetail: "Severus was known for his expertise in Potions and his complex personality",
 },
 {
@@ -346,7 +346,7 @@ hufflepuff: [
         lastName: "Tonks",
         age: "42",
         year: "N/A",
-        photo: "imgs/andromeda.jpg",
+        photo: "imgs/tonks.png",
         hiddenDetail: "Andromeda was known for her expertise in Divination and her ability to see the future",
 },
 {
